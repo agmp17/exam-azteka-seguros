@@ -1,0 +1,59 @@
+{
+  "seguros": [
+    {
+      "id": 4,
+      "nombre": "FALLECIMIENTO",
+      "descripcion": "Protección económica para tu familia en caso de fallecimiento natural o acidental.",
+      "primaTotal": "700",
+      "beneficios": [
+        "Beneficio económico para tu familia, que se incrementará en caso de fallecimiento accidental.",
+        "Servicio funerario sin costo adicional"
+      ],
+      "requisitos": {
+        "edadMinima": 18,
+        "edadMaxima": 75,
+        "idGeneros": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "nombre": "MIOCARDIO",
+      "descripcion": "Protección económica de $50,000 por la primera ocurrencia de infarto al miocardio.",
+      "primaTotal": "300",
+      "beneficios": [
+        "Envío de ambulancias",
+        "Consultas médicas telefónicas ilimitadas",
+        "No se requiere presentar exámenes médicos"
+      ],
+      "requisitos": {
+        "edadMinima": 15,
+        "edadMaxima": 64,
+        "idGeneros": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "nombre": "WOMAN",
+      "descripcion": "Protección económica de $50,000 por el primer diagnóstico de cáncer de mama o cervicouterino.",
+      "primaTotal": "300",
+      "beneficios": [
+        "20 consultas psicológicas a domicilio, que aplican siempre y cuando se haya diagnosticado el cáncer",
+        "Consultas psicológicas por telefóno ilimitadas",
+        "No se requiere presentar exámenes médicos"
+      ],
+      "requisitos": {
+        "edadMinima": 15,
+        "edadMaxima": 64,
+        "idGeneros": [
+          2
+        ]
+      }
+    }
+  ]
+}

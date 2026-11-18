@@ -1,0 +1,25 @@
+services:
+
+  consultita:
+    build:
+      context: .
+      dockerfile: consultita/Dockerfile
+    ports:
+      - "127.0.0.1:8081:8081"
+    environment:
+      SERVER_PORT: "8081"
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/examaztecaseguros
+      SEGUROS_ARCHIVO_JSON: classpath:datos-json.json
+  
+  verificota:
+    build:
+      context: .
+      dockerfile: verificota/Dockerfile
+    ports:
+      - "127.0.0.1:8082:8082"
+    environment:
+      SERVER_PORT: "8082"
+      CONSULTITA_URL: http://consultita:8081
+    depends_on:
+      consultita:
+        condition: service_started
